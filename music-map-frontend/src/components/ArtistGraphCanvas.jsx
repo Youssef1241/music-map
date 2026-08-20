@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import ForceGraph2D from 'react-force-graph-2d';
 import { useArtistGraph, getNodeRadius } from './useArtistGraph.jsx';
 import { forceCollide } from 'd3-force';
-import { loadMatrix } from '../../data/loadMatrix.js';
+import { loadMatrix } from '../../public/data/loadMatrix.js';
 
 // Hash string to pseudo-random float between 0 and 1
 function hashStringToUnitFloat(value) {

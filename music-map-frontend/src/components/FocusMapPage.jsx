@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import ArtistGraphCanvas from './ArtistGraphCanvas.jsx';
 import LanguageToggle from './LanguageToggle.jsx';
 import { useLocale } from './useLocale.js';
-import { loadMatrix } from '/data/loadMatrix';
+import { loadMatrix } from '/public/data/loadMatrix';
 import t from '../translations.json';
 
 export default function FocusMapPage() {
