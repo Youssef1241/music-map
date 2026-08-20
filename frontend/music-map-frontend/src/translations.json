@@ -1,0 +1,42 @@
+{
+  "ar": {
+    "title": "خريطة الموسيقى العربية",
+    "subtitle": "Arab Music Map",
+    "searchLabel": "ابحث عن فنان",
+    "placeholder": "...Cairokee، عمرو دياب، فيروز",
+    "searchBtn": "ابحث",
+    "or": "او",
+    "exploreBtn": "🌐 تصفح الخريطة",
+    "back": "العودة →",
+    "globalMapTitle": "الخريطة التفاعلية الكاملة",
+    "artistLabel": "الفنان : ",
+    "focusMapSub": "عرض 100 الفنانين الأقرب له",
+    "howToTitle": "كيف تعمل الخريطة",
+    "howToItems": [
+      "تقيس الخريطة التشابه بين الفنانين بناءً على أغانيهم",
+      "الخريطة الكاملة تضم كل الفنانين، وحجم الدائرة يعكس شهرة الفنان",
+      "قف على أي دائرة لرؤية أقرب فنانين له من حيث التشابه",
+      "اسحب الدوائر لتحريكها، واضغط على فنان لرؤية أقرب 100 فنان له"
+    ]
+  },
+  "en": {
+    "title": "Arab Music Map",
+    "subtitle": "خريطة الموسيقى العربية",
+    "searchLabel": "Search for an artist",
+    "placeholder": "Cairokee, Amr Diab, Fairuz...",
+    "searchBtn": "Search",
+    "or": "or",
+    "exploreBtn": "🌐 Explore Map",
+    "back": "← Back",
+    "globalMapTitle": "Full Interactive Map",
+    "artistLabel": "Artist: ",
+    "focusMapSub": "Showing top 100 nearest artists",
+    "howToTitle": "How the map works",
+    "howToItems": [
+      "The map measures similarity between artists based on their songs",
+      "The global map includes every artist, with node size reflecting popularity",
+      "Hover over any node to see its closest artists by similarity",
+      "Drag nodes to move them, or click an artist to view their top 100 similar artists"
+    ]
+  }
+}

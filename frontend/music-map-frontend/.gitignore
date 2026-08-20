@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+filtered_with_listeners.json
+english_artist_map.json
+new_artist_map.json
