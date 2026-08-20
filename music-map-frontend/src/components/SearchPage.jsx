@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import artistIndex from '/data/artist-index.json';
 import { loadMatrix } from '../loadMatrix';
 import LanguageToggle from './LanguageToggle.jsx';
 import { useLocale } from './useLocale.js';
@@ -159,18 +158,7 @@ const normalizeArabic = (text) => {
     .toLowerCase();
 };
 
-const RAW_ARTISTS = Array.from(
-  new Set(
-    Object.values(artistIndex)
-      .flatMap(artist => [artist.name, artist.name_en])
-      .filter(Boolean)
-  )
-);
 
-const PREPARED_ARTISTS = RAW_ARTISTS.map(artist => ({
-  original: artist,
-  normalized: normalizeArabic(artist)
-}));
 
 export default function SearchPage() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -186,12 +174,25 @@ export default function SearchPage() {
     loadMatrix().then((m) => setMatrix(m));
   }, []);
 
+const [preparedArtists, setPreparedArtists] = useState([]);
+
+useEffect(() => {
+  loadMatrix().then((m) => {
+    setMatrix(m);
+    const rawNames = Array.from(
+      new Set(
+        m.getAllIds().flatMap((id) => [m.getName(id, 'ar'), m.getName(id, 'en')]).filter(Boolean)
+      )
+    );
+    setPreparedArtists(rawNames.map((a) => ({ original: a, normalized: normalizeArabic(a) })));
+  });
+}, []);
   useEffect(() => {
     if (searchTerm.trim() === '') {
       setFilteredSuggestions([]);
       setShowDropdown(false);
     } else {
-      const matches = PREPARED_ARTISTS
+      const matches = preparedArtists
         .filter(artist =>
           artist.normalized.includes(normalizeArabic(searchTerm.trim()))
         )
