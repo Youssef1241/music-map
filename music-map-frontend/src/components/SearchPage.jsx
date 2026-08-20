@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import artistIndex from '/public/data/artist-index.json';
-import { loadMatrix } from '/public/data/loadMatrix';
+import artistIndex from '/data/artist-index.json';
+import { loadMatrix } from '../loadMatrix';
 import LanguageToggle from './LanguageToggle.jsx';
 import { useLocale } from './useLocale.js';
 import t from '../translations.json';
