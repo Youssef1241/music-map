@@ -13,9 +13,9 @@
 let cached = null;
 
 export async function loadMatrix({
-  indexUrl = '/data/artist-index.json',
-  matrixUrl = '/data/similarity-matrix.bin',
-  statsUrl = '/data/similarity-stats.json',
+  indexUrl = '/public/data/artist-index.json',
+  matrixUrl = '/public/data/similarity-matrix.bin',
+  statsUrl = '/public/data/similarity-stats.json',
 } = {}) {
   if (cached) return cached;
 

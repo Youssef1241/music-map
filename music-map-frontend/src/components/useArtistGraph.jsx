@@ -1,5 +1,5 @@
 import { useMemo, useEffect, useState } from 'react';
-import { loadMatrix } from '/data/loadMatrix';
+import { loadMatrix } from '/public/data/loadMatrix';
 
 
 export const POPULARITY_KEY = 'ARTIST_POPULARITY';
