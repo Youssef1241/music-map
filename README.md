@@ -39,16 +39,16 @@ The pipeline:
 6. Generates song/artist embeddings using **[MERT-v1-330M](https://huggingface.co/m-a-p/MERT-v1-330M)** (CC BY-NC 4.0).
 7. Supplementary artist info is pulled from **Wikidata** (via SPARQL) and **Wikipedia**. 
 8. The Extracted Essentia data and song embeddings are concatenated and the songs averaged for each artist to create a vector representation for each artist. The similarities are then computed using **cosine similarity**. 
-9. The Output is a static similarity matrix + artist index as JSON, consumed directly by the frontend.
+9. The output is a static similarity matrix + artist index as JSON, consumed directly by the frontend.
 
 
 ## Data sources & attribution
 
 This project relies on data and models from the following sources:
 
-- **[MusicBrainz](https://musicbrainz.org/)** — artist and recording metadata
+- **[MusicBrainz](https://musicbrainz.org/)** — artist metadata
 - **[Last.fm](https://www.last.fm/)** — supplementary artist data, via the Last.fm API
-- **[iTunes Search API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/)** — track and artwork metadata
+- **[iTunes Search API](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/)** — track previews
 - **[Essentia](https://essentia.upf.edu/)** — audio feature extraction
 - **[MERT-v1-330M](https://huggingface.co/m-a-p/MERT-v1-330M)** by m-a-p, licensed CC BY-NC 4.0 — music understanding embeddings
 - **[Wikidata](https://www.wikidata.org/)** — structured artist data via SPARQL
