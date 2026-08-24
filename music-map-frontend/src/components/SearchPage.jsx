@@ -341,17 +341,6 @@ useEffect(() => {
 
       {/* Footer Attributions */}
       <footer className="relative z-10 w-full max-w-2xl mt-8 pt-4 pb-2 border-t border-slate-800/60 text-center text-xs text-slate-400 pointer-events-auto backdrop-blur-sm">
-        <p className="mb-2">
-          Created by{' '}
-          <a
-            href="https://github.com/Youssef1241"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-teal-400 hover:text-amber-400 transition-colors font-medium underline underline-offset-2"
-          >
-            Youssef Tarek
-          </a>
-        </p>
         <p className="leading-relaxed text-slate-500">
           Powered by metadata and embeddings from{' '}
           <a href="https://musicbrainz.org/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 underline">MusicBrainz</a>,{' '}
