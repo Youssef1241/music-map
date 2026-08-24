@@ -11,7 +11,7 @@ import path from 'path';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 
-const SITE_URL = 'https://arabmusicmap.wiki';
+const SITE_URL = 'https://www.arabmusicmap.wiki';
 const ARTIST_INDEX_PATH = path.join(PROJECT_ROOT, 'public', 'data', 'artist-index.json');
 const OUTPUT_PATH = path.join(PROJECT_ROOT, 'public', 'sitemap.xml');
 
